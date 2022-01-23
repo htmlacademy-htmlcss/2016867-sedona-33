@@ -18,7 +18,7 @@
                    <a class="navigation-link" href="#">О Седоне</a>
                </li>
                <li class="navigation-item">
-                   <a class="navigation-link" href="#">Гостиницы</a>
+                   <a class="navigation-link" href="hotels.html">Гостиницы</a>
                </li>                              
            </ul>
             
@@ -43,12 +43,13 @@
     </header>
     
     <main class="main-index">
-       <h1 class="visually-hidden">Седона</h1>
-       <img class="logo" src="" alt="Логотип Седона">
-       <p class="main-head">Седона — небольшой городок в Аризоне,
-заслуживающий большего!</p>
-      <p class="main-head-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-       
+       <section class="main-index-logo">
+            <h1 class="visually-hidden">Седона</h1>
+            <img class="main-index-logo" src="" alt="Логотип Седона">
+            <b class="main-index-logo-head">Седона — небольшой городок в Аризоне,заслуживающий большего!</b>
+            <p class="main-index-logo-head-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+       </section>
+
        <section class="main-advantages">
           <section class="main-advantages-real_city">
               <h2 class="visually-hidden">Седона - настоящий городок</h2>
@@ -112,15 +113,12 @@
           </section >
        </section>
        <section class="search_hotel">
-      <h2 class="search_hotel-title">Поиск гостиницы</h2>
-      <p class="search_hotel-head">Заинтресовались?</p>
-      <p class="search_hotel-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
-.</p>
+          <h2 class="search_hotel-title">Поиск гостиницы</h2>
+          <b class="search_hotel-head">Заинтресовались?</b>
+          <p class="search_hotel-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
       <!-- Здесь форма подбора гостиницы -->
      
-        <button class="button search_hotel-button" type="submit">
-            ПОИСК ГОСТИНИЦЫ В седоне
-        </button>
+           <button class="button search_hotel-button" type="submit">ПОИСК ГОСТИНИЦЫ В седоне</button>
       </section>
     </main>
     
@@ -131,7 +129,7 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="subscribe-email">Email</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
-            <button class="button subscribe-button" type="submit">
+            <button class="button subscribe-button light-button" type="submit">
               <span>Подписаться</span>
             </button>
           </form>
@@ -150,9 +148,7 @@
                   </a>
               </li>
               <li class="footer-social-item">
-                  <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS
-
-">
+                  <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
                       <span class="visually-hidden">Youtube</span>
                   </a>
               </li>
