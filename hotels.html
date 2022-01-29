@@ -6,40 +6,38 @@
   </head>
   <body>
     <header class="header">
-     <div class="logo">
+      <div class="logo">
             <a class="logo__link" href="index.html">
-                <img class="logo__img" src="" alt="Логотип Седона">
+                <img class="logo__img" src="images/logo.svg" alt="Логотип Седона." width="139" height="70">
             </a>
       </div>
       
      <nav class="navigation">
            <ul class="navigation__list">
                <li class="navigation__item">
-                   <a class="navigation__link" href="index.html">Главная</a>
+                   <a class="navigation__link navigation__link" href="index.html">Главная</a>
                </li>
                <li class="navigation__item">
                    <a class="navigation__link" href="#">О Седоне</a>
                </li>
                <li class="navigation__item">
-                   <a class="navigation__link navigation__link--active" href="hotels.html">Гостиницы</a>
+                   <a class="navigation__link--active" href="hotels.html">Гостиницы</a>
                </li>                              
            </ul>
             
             <ul class="navigation__list navigation__user" >
                <li class="navigation__item">
                    <a class="navigation__link" href="#">
-                       <span class="visually-hidden">Поиск</span> 
+                       <span class="visually-hidden">Поиск.</span> 
                    </a>
                </li>
                <li class="navigation__item">
                    <a class="navigation__link" href="#">
-                       <span class="visually-hidden">Счетчик лайков</span> 
+                       <span class="visually-hidden">Счетчик лайков.</span> 
                     </a>
                </li>
                <li class="navigation__item">
-                      <a class="button like-button" href="#">
-                           <span>Хочу сюда!</span>
-                     </a>
+                    <button class="button like-button" type="button">Хочу сюда!</button>
                </li>                              
            </ul>
      </nav> 
@@ -51,19 +49,19 @@
             <ul class="breadcrumbs">
                 <li class="breadcrumbs__item">
                     <a class="breadcrumbs__link" href="index.html">
-                        <span class="visually-hidden">Главная</span>
+                        <span class="visually-hidden">Главная.</span>
                     </a>
                 </li>
                 <li class="breadcrumbs__item">
                     <a class="breadcrumbs__link">Гостиницы</a>
                 </li>
             </ul>
-            <h2 class="visually-hidden">Фильтры поиска гостиницы</h2>
+            <h2 class="visually-hidden">Фильтры поиска гостиницы.</h2>
             <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="hotels-filter__fildset hotels-filter__fildset--infrastructure">
-                   <legend class="hotels-filter__titel">
+                    <legend class="hotels-filter__titel">
                        Инфраструктура:
-                   </legend>
+                    </legend>
                     <ul class="hotels-filter__list">
                        <li class="hotels-filter__item">
                           <label class="control">
@@ -95,12 +93,12 @@
                        </li>
                        <li class="hotels-filter__item">
                           <label class="control">
-                              <input class="control__input" type="radio" name="type-house" value="motel" >Мотель
+                              <input class="control__input" type="radio" name="type-house" value="motel">Мотель
                           </label>
                        </li>
                        <li class="hotels-filter__item">
                           <label class="control">
-                              <input class="control__input" type="radio" name="type-house" value="apartament" >Апартаменты
+                              <input class="control__input" type="radio" name="type-house" value="apartament">Апартаменты
                           </label>
                        </li>
                     </ul>
@@ -111,7 +109,7 @@
       </section>
       
       <section class="hotels-list">
-         <h2 class="visually-hidden">Список гостиниц Седоны</h2>
+         <h2 class="visually-hidden">Список гостиниц Седоны.</h2>
          <section class="select">
            <p>Найдено гостиниц: 38</p>
            <select class="select__control" aria-label="Сортировка">
@@ -141,37 +139,37 @@
         <section class="hotels-catalog">
              <ul class="hotels-catalog__list">
                  <li class="hotels-catalog__item">
-                     <img class="hotels-catalog__img" src="" alt="Amara Resort & Spa">
+                     <img class="hotels-catalog__img" src="images/hotel-1.jpg" alt="Amara Resort & Spa." width="299" height="206">
                      <a class="hotels-catalog__link" href="#">Amara Resort & Spa</a>
                      <span class="hotels-catalog__description">Гостиница</span>
-                     <span class="hotels-catalog__description">От 4000 р.</span>
+                     <span class="hotels-catalog__description">От 4000 ₽.</span>
                      <a class="button description-buttondescription" href="#"> Подробнее</a>
                      <button class="button light-button favorites-button">В избранное</button>
                      <span class="hotels-catalog__rating four-star">Рейтинг: 8,5</span>
                  </li>
                  <li class="hotels-list-catalog-item">
-                     <img class="hotels-catalog__img" src="" alt="Desert Quail Inn">
+                     <img class="hotels-catalog__img" src="images/hotel-2.jpg" alt="Desert Quail Inn." width="299" height="206">
                      <a class="hotels-catalog__link" href="#">Desert Quail Inn</a>
                      <span class="hotels-catalog__description">Гостиница</span>
-                     <span class="hotels-catalog__description">От 3000 р.</span>
+                     <span class="hotels-catalog__description">От 3000 ₽.</span>
                      <a class="button description-buttondescription" href="#"> Подробнее</a>
                      <button class="button light-button favorites-button">В избранное</button>
                      <span class="hotels-catalog__rating three-star">Рейтинг: 8,9</span>
                  </li>
                  <li class="hotels-list-catalog-item">
-                     <img class="hotels-catalog__img" src="" alt="Villas at Poco Diablo">
+                     <img class="hotels-catalog__img" src="images/hotel-3.jpg" alt="Villas at Poco Diablo." width="299" height="206">
                      <a class="hotels-catalog__link" href="#">Villas at Poco Diablo</a>
                      <span class="hotels-catalog__description">Гостиница</span>
-                     <span class="hotels-catalog__description">От 2000 р.</span>
+                     <span class="hotels-catalog__description">От 2000 ₽.</span>
                      <a class="button description-buttondescription" href="#"> Подробнее</a>
                      <button class="button light-button favorites-button">В избранное</button>
                      <span class="hotels-catalog__rating two-star">Рейтинг: 9,2</span>
                  </li>
                  <li class="hotels-list-catalog-item">
-                     <img class="hotels-catalog__img" src="" alt="GreenTree Inn">
+                     <img class="hotels-catalog__img" src="images/hotel-4.jpg" alt="GreenTree Inn." width="299" height="206">
                      <a class="hotels-catalog__link" href="#">GreenTree Inn</a>
                      <span class="hotels-catalog__description">Гостиница</span>
-                     <span class="hotels-catalog__description">От 3000 р.</span>
+                     <span class="hotels-catalog__description">От 3000 ₽.</span>
                      <a class="button description-buttondescription" href="#"> Подробнее</a>
                      <button class="button light-button favorites-button">В избранное</button>
                      <span class="hotels-catalog__rating two-star">Рейтинг: 9,2</span>
@@ -211,44 +209,44 @@
     </main>
 
     <footer>
-           <section class="subscribe">
-               <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-               <span class="subscribe__description">Только полезная информация и никакого спама, честное бойскаутское!</span>
-              <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
+       <section class="subscribe">
+           <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+           <span class="subscribe__description">Только полезная информация и никакого спама, честное бойскаутское!</span>
+           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
                 <label for="subscribe__email">Email</label>
                 <input class="subscribe__field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
-                <button class="button subscribe-button light-button" type="submit">
-                  <span>Подписаться</span>
-                </button>
-              </form>
-           </section>
-
-           <section class="contacts">
-              <h2 class="visually-hidden">Контакты</h2>
-               <ul class="contacts__social">
-                  <li class="contacts__item">
-                      <a class="button socia-button" href="https://twitter.com/htmlacademy_ru">
-                          <span class="visually-hidden">Twitter</span>
-                      </a>
-                  </li>
-                  <li class="contacts__item">
-                      <a class="button socia-button" href="https://www.facebook.com/htmlacademy">
-                          <span class="visually-hidden">Facebook</span>
-                      </a>
-                  </li>
-                  <li class="contacts__item">
-                      <a class="button socia-button" href="https://www.youtube.com/c/HTMLAcademyRUS">
-                          <span class="visually-hidden">Youtube</span>
-                      </a>
-                  </li>
-               </ul>
-                <address class="contacts__phone">
-                   <a class="contacts__phone-item" href="tel:+78128121212">+7(812)812-12-12</a>
-                </address>
-                <a class="contacts__slogo" href="https://htmlacademy.ru/">
-                   <img class="contacts-logo-item" src="" alt="Логотип HTML-академии">
-                </a>
-           </section>
+                <button class="button subscribe-button light-button" type="submit">Подписаться</button>
+           </form>
+       </section>
+       
+       <section class="contacts">
+          <h2 class="visually-hidden">Контакты.</h2>
+           <ul class="contacts__social social">
+              <li class="social__item">
+                  <a class="button social-button" href="https://twitter.com/htmlacademy_ru">
+                      <span class="visually-hidden">Twitter.</span>
+                  </a>
+              </li>
+              <li class="social__item">
+                  <a class="button social-button" href="https://www.facebook.com/htmlacademy">
+                      <span class="visually-hidden">Facebook.</span>
+                  </a>
+              </li>
+              <li class="social__item">
+                  <a class="button social-button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                      <span class="visually-hidden">Youtube.</span>
+                  </a>
+              </li>
+           </ul>
+            <address class="phone">
+               <a class="phone__item" href="tel:+78128121212">+7(812)812-12-12</a>
+            </address>
+            <a class="contacts__logo" href="https://htmlacademy.ru/">
+               <img class="contacts__logo--img" src="images/logo-htmlacademy.svg" alt="Логотип HTML-академии." width="115" height="34">
+            </a>
+            
+       </section>
+        
     </footer>
     
 </body>
