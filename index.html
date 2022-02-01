@@ -3,52 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>Седона. Главная страница</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="header">
-     <div class="logo">
-            <a class="logo__link" href="index.html">
-                <img class="logo__img" src="images/logo.svg" alt="Логотип Седона." width="139" height="70">
-            </a>
-      </div>
+         <div class="logo__nav">
+                <a class="logo__nav--link" href="index.html">
+                    <img class="logo__nav--img" src="images/logo.svg" alt="Логотип Седона." width="139" height="70">
+                </a>
+          </div>
       
-     <nav class="navigation">
-           <ul class="navigation__list">
-               <li class="navigation__item">
-                   <a class="navigation__link navigation__link--active" href="#">Главная</a>
-               </li>
-               <li class="navigation__item">
-                   <a class="navigation__link" href="#">О Седоне</a>
-               </li>
-               <li class="navigation__item">
-                   <a class="navigation__link" href="hotels.html">Гостиницы</a>
-               </li>                              
-           </ul>
-            
-            <ul class="navigation__list navigation__user" >
-               <li class="navigation__item">
-                   <a class="navigation__link" href="#">
-                       <span class="visually-hidden">Поиск.</span> 
-                   </a>
-               </li>
-               <li class="navigation__item">
-                   <a class="navigation__link" href="#">
-                       <span class="visually-hidden">Счетчик лайков.</span> 
-                    </a>
-               </li>
-               <li class="navigation__item">
-                    <button class="button like-button" type="button">Хочу сюда!</button>
-               </li>                              
-           </ul>
-     </nav> 
+          <nav class="navigation">
+               <ul class="navigation__list">
+                   <li class="navigation__item">
+                       <a class="navigation__link navigation__link--active" href="#">Главная</a>
+                   </li>
+                   <li class="navigation__item">
+                       <a class="navigation__link" href="#">О Седоне</a>
+                   </li>
+                   <li class="navigation__item">
+                       <a class="navigation__link" href="hotels.html">Гостиницы</a>
+                   </li>                              
+               </ul>
+
+                <ul class="navigation__list navigation__user" >
+                   <li class="navigation__item">
+                       <a class="navigation__link" href="#">
+                           <span class="visually-hidden">Поиск.</span> 
+                       </a>
+                   </li>
+                   <li class="navigation__item">
+                       <a class="navigation__link" href="#">
+                           <span class="visually-hidden">Счетчик лайков.</span> 
+                        </a>
+                   </li>
+                   <li class="navigation__item">
+                        <button class="button like-button" type="button">Хочу сюда!</button>
+                   </li>                              
+               </ul>
+          </nav> 
     </header>
     
     <main class="main-index">
        <section class="logo">
             <h1 class="visually-hidden">Седона.</h1>
             <img class="logo__img" src="images/welcome.svg" alt="Логотип Седона." width="458" height="352">
-            <span class="logo__titel">Седона — небольшой городок в Аризоне,заслуживающий большего!</span>
-            <span class="logo__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</span>
+            <div class="logo__text">
+                <span class="logo__titel">Седона — небольшой городок в Аризоне,заслуживающий большего!</span>
+                <span class="logo__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</span>
+           </div>
        </section>
 
        <section class="advantages">
@@ -57,7 +60,7 @@
              <li class="advantages__item advantages__item--real-city">
               <h3 class="visually-hidden">Седона - описание.</h3>
               <div class="advantages__text">
-                  <span class="advantages__header">Настоящий городок</span>
+                  <span class="advantages__head">Настоящий городок</span>
                   <span class="advantages__description">- №1 -</span>
                   <span class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</span>
               </div>
@@ -66,17 +69,17 @@
             <li class="advantages__item advantages__attraction">
               <h3 class="visually-hidden">Седона - условия.</h3>
               <ul class="advantages__list-attraction">
-                  <li class="advantages__item advantages__attraction-item">
-                      <span class="advantages__attraction-head">Жильё</span>
-                      <span class="advantages__attraction-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</span>
+                  <li class="advantages__item advantages__attraction-item--home">
+                      <span class="advantages__head advantages__attraction-head">Жильё</span>
+                      <span class="advantages__description advantages__attraction-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</span>
+                  </li>
+                  <li class="advantages__item advantages__attraction-item advantages--food">
+                      <span class="advantages__head advantages__attraction-head">Еда</span>
+                      <span class="advantages__description advantages__attraction-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</span>
                   </li>
                   <li class="advantages__item advantages__attraction-item">
-                      <span class="advantages__attraction-head">Еда</span>
-                      <span class="advantages__attraction-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</span>
-                  </li>
-                  <li class="advantages__item advantages__attraction-item">
-                      <span class="advantages__attraction-head">Сувениры</span>
-                      <span class="advantages__attraction-description">Не только китайского, но и настоящего местного производства!</span>
+                      <span class="advantages__head advantages__attraction-head--presents">Сувениры</span>
+                      <span class="advantages__description advantages__attraction-description">Не только китайского, но и настоящего местного производства!</span>
                   </li>
               </ul>
              </li>
@@ -85,7 +88,7 @@
                   <h3 class="visually-hidden">Седона - Мост дьявола.</h3>
                   <img src="images/diablo.jpg" alt="Седона. Вид на мост дьявола." width="800" height="384">
                   <div class="advantages__text">
-                      <span class="advantages__header">Там есть мост дьявола</span>
+                      <span class="advantages__head">Там есть мост дьявола</span>
                       <span class="advantages__description">- №2 -</span>
                       <span class="advantages__description">Да, по нему можно пройти! 
                       <br>Если вы осмелитесь, разумеется</span>
@@ -102,7 +105,7 @@
                               <span class="advantages__description">Все достопримечательности находятся очень близко</span>
                           </div>
                      </li>
-                      <li class="advantages__item advantages__features-item">
+                      <li class="advantages__item advantages__features-item advantages--road">
                          <div class="advantages__text">
                               <span class="advantages__head">Красивая дорога</span>
                               <span class="advantages__description">- №4 -</span>
@@ -146,26 +149,26 @@
           <h2 class="visually-hidden">Контакты.</h2>
            <ul class="contacts__social social">
               <li class="social__item">
-                  <a class="button social-button" href="https://twitter.com/htmlacademy_ru">
+                  <a class="navigation__link button social-button button--twitter" href="https://twitter.com/htmlacademy_ru">
                       <span class="visually-hidden">Twitter.</span>
                   </a>
               </li>
               <li class="social__item">
-                  <a class="button social-button" href="https://www.facebook.com/htmlacademy">
+                  <a class="navigation__link button social-button button--facebook" href="https://www.facebook.com/htmlacademy">
                       <span class="visually-hidden">Facebook.</span>
                   </a>
               </li>
               <li class="social__item">
-                  <a class="button social-button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                  <a class="navigation__link button social-button button--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
                       <span class="visually-hidden">Youtube.</span>
                   </a>
               </li>
            </ul>
             <address class="phone">
-               <a class="phone__item" href="tel:+78128121212">+7(812)812-12-12</a>
+               <a class="navigation__link phone__item" href="tel:+78128121212">+7(812)812-12-12</a>
             </address>
             <a class="contacts__logo" href="https://htmlacademy.ru/">
-               <img class="contacts__logo--img" src="images/logo-htmlacademy.svg" alt="Логотип HTML-академии." width="115" height="34">
+               <img class="navigation__link contacts__logo--img" src="images/logo-htmlacademy.svg" alt="Логотип HTML-академии." width="115" height="34">
             </a>
             
        </section>
