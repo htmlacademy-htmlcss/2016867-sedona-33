@@ -7,9 +7,9 @@
   </head>
   <body>
     <header class="header">
-         <div class="logo__nav">
-                <a class="logo__nav--link" href="index.html">
-                    <img class="logo__nav--img" src="images/logo.svg" alt="Логотип Седона." width="139" height="70">
+         <div class="logo">
+                <a class="logo__link" href="index.html">
+                    <img class="logo__img" src="images/logo.svg" alt="Логотип Седона." width="139" height="70">
                 </a>
           </div>
       
@@ -45,12 +45,12 @@
     </header>
     
     <main class="main-index">
-       <section class="logo">
+       <section class="welcome">
             <h1 class="visually-hidden">Седона.</h1>
-            <img class="logo__img" src="images/welcome.svg" alt="Логотип Седона." width="458" height="352">
-            <div class="logo__text">
-                <span class="logo__titel">Седона — небольшой городок в Аризоне,заслуживающий большего!</span>
-                <span class="logo__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</span>
+            <img class="welcome__img" src="images/welcome.svg" alt="Логотип Седона." width="458" height="352">
+            <div class="welcome__text">
+                <span class="welcome__titel">Седона — небольшой городок в Аризоне,заслуживающий большего!</span>
+                <span class="welcome__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</span>
            </div>
        </section>
 
@@ -70,16 +70,16 @@
               <h3 class="visually-hidden">Седона - условия.</h3>
               <ul class="advantages__list-attraction">
                   <li class="advantages__item advantages__attraction-item--home">
-                      <span class="advantages__head advantages__attraction-head">Жильё</span>
-                      <span class="advantages__description advantages__attraction-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</span>
+                      <span class="advantages__head advantages__attraction--head">Жильё</span>
+                      <span class="advantages__description advantages__attraction--description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</span>
                   </li>
                   <li class="advantages__item advantages__attraction-item advantages--food">
-                      <span class="advantages__head advantages__attraction-head">Еда</span>
-                      <span class="advantages__description advantages__attraction-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</span>
+                      <span class="advantages__head advantages__attraction--head">Еда</span>
+                      <span class="advantages__description advantages__attraction--description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</span>
                   </li>
-                  <li class="advantages__item advantages__attraction-item">
-                      <span class="advantages__head advantages__attraction-head--presents">Сувениры</span>
-                      <span class="advantages__description advantages__attraction-description">Не только китайского, но и настоящего местного производства!</span>
+                  <li class="advantages__item advantages__attraction-item advantages--presents">
+                      <span class="advantages__head advantages__attraction--head">Сувениры</span>
+                      <span class="advantages__description advantages__attraction--description">Не только китайского, но и настоящего местного производства!</span>
                   </li>
               </ul>
              </li>
@@ -95,7 +95,7 @@
                   </div>   
              </li>
              
-              <li class="advantages__item advantages__features">
+              <li class="advantages__item advantages__features advantages--square">
                   <h3 class="visually-hidden">Седона- особенности.</h3>
                   <ul class="advantages__list-features">
                       <li class="advantages__item advantages__features-item">
@@ -112,7 +112,7 @@
                               <span class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
                           </div>
                       </li>
-                      <li class="advantages__item advantages__features-item">
+                      <li class="advantages__item advantages__features-item advantages--tourists">
                          <div class="advantages__text">
                               <span class="advantages__head">Мало туристов</span>
                               <span class="advantages__description">- №5 -</span>
@@ -141,7 +141,7 @@
             <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
                 <label for="subscribe__email">Email</label>
                 <input class="subscribe__field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
-                <button class="button subscribe-button light-button" type="submit">Подписаться</button>
+                <button class="button subscribe__button" type="submit">Подписаться</button>
             </form>
        </section>
        
@@ -149,26 +149,26 @@
           <h2 class="visually-hidden">Контакты.</h2>
            <ul class="contacts__social social">
               <li class="social__item">
-                  <a class="navigation__link button social-button button--twitter" href="https://twitter.com/htmlacademy_ru">
+                  <a class="navigation__link button social__button" href="https://twitter.com/htmlacademy_ru">
                       <span class="visually-hidden">Twitter.</span>
                   </a>
               </li>
               <li class="social__item">
-                  <a class="navigation__link button social-button button--facebook" href="https://www.facebook.com/htmlacademy">
+                  <a class="navigation__link button social__button" href="https://www.facebook.com/htmlacademy">
                       <span class="visually-hidden">Facebook.</span>
                   </a>
               </li>
               <li class="social__item">
-                  <a class="navigation__link button social-button button--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                  <a class="navigation__link button social__button" href="https://www.youtube.com/c/HTMLAcademyRUS">
                       <span class="visually-hidden">Youtube.</span>
                   </a>
               </li>
            </ul>
-            <address class="phone">
+            <address class="contacts__phone">
                <a class="navigation__link phone__item" href="tel:+78128121212">+7(812)812-12-12</a>
             </address>
-            <a class="contacts__logo" href="https://htmlacademy.ru/">
-               <img class="navigation__link contacts__logo--img" src="images/logo-htmlacademy.svg" alt="Логотип HTML-академии." width="115" height="34">
+            <a class="contacts__logo contacts-logo" href="https://htmlacademy.ru/">
+               <img class="navigation__link contacts-logo--img" src="images/logo-htmlacademy.svg" alt="Логотип HTML-академии." width="115" height="34">
             </a>
             
        </section>
