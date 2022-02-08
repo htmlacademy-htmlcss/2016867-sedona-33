@@ -19,23 +19,23 @@
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a class="navigation__link navigation__link--active" href="#">Главная</a>
+                        <a class="navigation__link navigation__link--active" href="index.html">Главная</a>
                     </li>
                     <li class="navigation__item">
                         <a class="navigation__link" href="#">О Седоне</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="hotels.html">Гостиницы</a>
+                        <a class="navigation__link " href="hotels.html">Гостиницы</a>
                     </li>
                 </ul>
 
                 <ul class="navigation__list navigation__user">
-                    <li class="navigation__item">
+                    <li class="navigation__item navigation__item--search">
                         <a class="navigation__link" href="#">
                             <span class="visually-hidden">Поиск.</span>
                         </a>
                     </li>
-                    <li class="navigation__item">
+                    <li class="navigation__item navigation__item--likes">
                         <a class="navigation__link" href="#">
                             <span class="visually-hidden">Счетчик лайков.</span>
                         </a>
@@ -46,17 +46,17 @@
                 </ul>
             </nav>
         </header>
-
         <main class="main-container main-index">
             <section class="welcome">
-                <h1 class="visually-hidden">Седона.</h1>
-                <img class="welcome__img" src="images/welcome.svg" alt="Логотип Седона." width="458" height="352">
+                <div class="welcome__img">
+                    <h1 class="visually-hidden">Седона.</h1>
+                    <img class="welcome--img" src="images/welcome.svg" alt="Логотип Седона." width="458" height="352">
+                </div>
                 <div class="welcome__text">
                     <p class="welcome__titel">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
                     <p class="welcome__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
                 </div>
             </section>
-
             <section class="advantages">
                 <h2 class="visually-hidden">Седона - преимущества.</h2>
                 <ul class="advantages__list">
@@ -151,21 +151,21 @@
             <section class="contacts">
                 <h2 class="visually-hidden">Контакты.</h2>
                 <ul class="contacts__social social">
-                    <li class="social__item">
+                    <li class="social__item twitter">
                         <a class="navigation__link button social__button" href="https://twitter.com/htmlacademy_ru">
                             <span class="visually-hidden">Twitter.</span>
                         </a>
                     </li>
-                    <li class="social__item">
+                    <li class="social__item facebook">
                         <a class="navigation__link button social__button" href="https://www.facebook.com/htmlacademy">
                             <span class="visually-hidden">Facebook.</span>
                         </a>
                     </li>
-                    <li class="social__item">
+                    <li class="social__item youtube">
                         <a class="navigation__link button social__button" href="https://www.youtube.com/c/HTMLAcademyRUS">
                             <span class="visually-hidden">Youtube.</span>
                         </a>
-                    </li>
+                    </li>                                   
                 </ul>
                 <address class="contacts__phone">
                     <a class="navigation__link phone__item" href="tel:+78128121212">+7(812)812-12-12</a>
@@ -173,7 +173,6 @@
                 <a class="contacts__logo contacts-logo" href="https://htmlacademy.ru/">
                     <img class="navigation__link contacts-logo--img" src="images/logo-htmlacademy.svg" alt="Логотип HTML-академии." width="115" height="34">
                 </a>
-
             </section>
 
         </footer>
