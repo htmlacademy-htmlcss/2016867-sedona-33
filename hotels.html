@@ -40,7 +40,7 @@
                             <span class="visually-hidden">Счетчик лайков.</span>
                         </a>
                     </li>
-                    <li class="navigation__item">
+                    <li class="navigation__item navigation__item--button">
                         <button class="button button--like" type="button">Хочу сюда!</button>
                     </li>
                 </ul>
@@ -108,8 +108,8 @@
                         </ul>
                     </fieldset>
                     <div class="hotels-filter__button">
-                        <button class="button button--apply" type="submit">Применить</button>
-                        <button class="button button--reset" type="reset">Сбросить</button>
+                        <button class="button hotels-filter__button--apply" type="submit">Применить</button>
+                        <button class="button hotels-filter__button--reset" type="reset">Сбросить</button>
                     </div>
                 </form>
             </section>
@@ -119,24 +119,24 @@
                 <section class="select">
                     <span class="select--found">Найдено гостиниц: 38</span>
                     <div class="contanier-sorting">
-                        <select class="select__control" aria-label="Сортировка">
+                        <select class="contanier-sorting__control" aria-label="Сортировка">
                             <option value="cheap">Сначала дешёвые</option>
                             <option value="popular">Сначала популярные</option>
                             <option value="expensive">Сначала дорогие</option>
                         </select>
-                        <ul class="hotels-list__show">
+                        <ul class="contanier-sorting__show">
                             <li>
-                                <a class="button hotels-list__item hotels-list__show--cards hotels-list__show--active" href="#">
+                                <a class="button contanier-sorting__item contanier-sorting__show--cards contanier-sorting__show--active" href="#">
                                     <span class="visually-hidden">Показать карточки</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="button hotels-list__item hotels-list__show--one" href="#">
+                                <a class="button contanier-sorting__item contanier-sorting__show--one" href="#">
                                     <span class="visually-hidden ">Показать по одной</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="button hotels-list__item hotels-list__show--list" href="#">
+                                <a class="button contanier-sorting__item contanier-sorting__show--list" href="#">
                                     <span class="visually-hidden">Показать список</span>
                                 </a>
                             </li>
@@ -149,9 +149,9 @@
                         <li class="hotels-catalog__item">
                             <img class="hotels-catalog__img" src="images/hotel-1.jpg" alt="Amara Resort & Spa." width="299" height="206">
                             <a class="hotels-catalog__link" href="#">Amara Resort & Spa</a>
-                            <span class="hotels-catalog__name">Гостиница</span>
-                            <span class="hotels-catalog__price">От 4000 ₽</span>
-                            <div class="hotels-catalog__button">
+                            <div class="hotels-catalog__description">
+                                <span class="hotels-catalog__name">Гостиница</span>
+                                <span class="hotels-catalog__price">От 4000 ₽</span>
                                 <a class="button hotels-catalog__button--more" href="#"> Подробнее</a>
                                 <button class="button button__favorites">В избранное</button>
                             </div>
@@ -160,20 +160,20 @@
                         <li class="hotels-catalog__item">
                             <img class="hotels-catalog__img" src="images/hotel-2.jpg" alt="Desert Quail Inn." width="299" height="206">
                             <a class="hotels-catalog__link" href="#">Desert Quail Inn</a>
-                            <span class="hotels-catalog__name">Гостиница</span>
-                            <span class="hotels-catalog__price">От 3000 ₽</span>
-                            <div class="hotels-catalog__button">
+                            <div class="hotels-catalog__description">
+                                <span class="hotels-catalog__name">Гостиница</span>
+                                <span class="hotels-catalog__price">От 3000 ₽</span>
                                 <a class="button hotels-catalog__button--more" href="#"> Подробнее</a>
                                 <button class="button button__favorites">В избранное</button>
-                                <span class="hotels-catalog__rating three-star">Рейтинг: 8,9</span>
                             </div>
+                            <span class="hotels-catalog__rating three-star">Рейтинг: 8,9</span>
                         </li>
                         <li class="hotels-catalog__item">
                             <img class="hotels-catalog__img" src="images/hotel-3.jpg" alt="Villas at Poco Diablo." width="299" height="206">
                             <a class="hotels-catalog__link" href="#">Villas at Poco Diablo</a>
-                            <span class="hotels-catalog__name">Гостиница</span>
-                            <span class="hotels-catalog__price">От 2000 ₽</span>
-                            <div class="hotels-catalog__button">
+                            <div class="hotels-catalog__description">
+                                <span class="hotels-catalog__name">Гостиница</span>
+                                <span class="hotels-catalog__price">От 2000 ₽</span>
                                 <a class="button hotels-catalog__button--more" href="#"> Подробнее</a>
                                 <button class="button button__favorites button__favorites--active">В избранном</button>
                             </div>
@@ -182,9 +182,9 @@
                         <li class="hotels-catalog__item">
                             <img class="hotels-catalog__img" src="images/hotel-4.jpg" alt="GreenTree Inn." width="299" height="206">
                             <a class="hotels-catalog__link" href="#">GreenTree Inn</a>
-                            <span class="hotels-catalog__name">Гостиница</span>
-                            <span class="hotels-catalog__price">От 3000 ₽</span>
-                            <div class="hotels-catalog__button">
+                            <div class="hotels-catalog__description">
+                                <span class="hotels-catalog__name">Гостиница</span>
+                                <span class="hotels-catalog__price">От 3000 ₽</span>
                                 <a class="button hotels-catalog__button--more" href="#"> Подробнее</a>
                                 <button class="button button__favorites">В избранное</button>
                             </div>
@@ -243,17 +243,17 @@
             <section class="contacts">
                 <h2 class="visually-hidden">Контакты.</h2>
                 <ul class="contacts__social social">
-                    <li class="social__item twitter">
+                    <li class="social__item social__item--twitter">
                         <a class="navigation__link button social__button" href="https://twitter.com/htmlacademy_ru">
                             <span class="visually-hidden">Twitter.</span>
                         </a>
                     </li>
-                    <li class="social__item facebook">
+                    <li class="social__item social__item--facebook">
                         <a class="navigation__link button social__button" href="https://www.facebook.com/htmlacademy">
                             <span class="visually-hidden">Facebook.</span>
                         </a>
                     </li>
-                    <li class="social__item youtube">
+                    <li class="social__item social__item--youtube">
                         <a class="navigation__link button social__button" href="https://www.youtube.com/c/HTMLAcademyRUS">
                             <span class="visually-hidden">Youtube.</span>
                         </a>
