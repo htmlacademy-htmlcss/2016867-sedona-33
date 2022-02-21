@@ -2,7 +2,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    src: url("fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -10,7 +10,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    src: url("fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -24,7 +24,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -83,7 +82,6 @@ body {
     max-width: 300px;
     margin-left: auto;
     padding-right: 70px;
-    padding
 }
 
 .navigation__user .navigation__link {
@@ -101,7 +99,7 @@ body {
     flex-grow: 1;
 }
 
-.welcome__img {
+.welcome__head {
     padding-top: 51px;
     padding-bottom: 83px;
     margin: 0 auto;
@@ -113,7 +111,7 @@ body {
     background-position: bottom, top;
 }
 
-.welcome__img--img {
+.welcome__img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -159,7 +157,6 @@ body {
     flex-wrap: wrap;
     text-align: center;
     list-style: none;
-    padding-left: 0;
     width: 1200px;
 }
 
@@ -184,20 +181,18 @@ body {
     margin-left: 0px;
     padding: 0;
     text-align: center;
-
 }
 
-.advantages__text--head {
+.advantages__title {
     display: block;
     padding-top: 97px;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
-    vertical-align: middle;
 }
 
-.advantages__text--description {
+.advantages__description, .advantages__number {
     display: block;
     width: 220px;
     padding-top: 30px;
@@ -205,22 +200,20 @@ body {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    vertical-align: middle;
     margin: 0 auto;
     color: #ffffff;
 }
 
-.advantages__list-attraction {
+.advantages-attraction__list {
     display: flex;
     width: 1200px;
     margin: 0;
     padding: 0;
     background-color: rgba(131, 179, 211, 0.12);
     list-style: none;
-    padding-left: 0;
 }
 
-.advantages__attraction-item {
+.advantages-attraction__item {
     display: block;
     width: 400px;
     height: 100%;
@@ -228,40 +221,40 @@ body {
     padding: 0;
 }
 
-.advantages__attraction-item--head {
+.advantages-attraction__title {
     padding-top: 184px;
     padding-bottom: 20px;
 }
 
-.advantages__attraction-item--description {
+.advantages-attraction__description {
     padding-top: 0;
     padding-bottom: 79px;
+    color: #333333;
 }
 
 .advantages__features-item {
     padding-bottom: 108px;
 }
 
-.advantages__attraction-item--description, .advantages__features-item--description {
+.advantages-attraction__description, .advantages-features__description, .advantages-features__number {
     width: 250px;
     color: #333333;
 }
 
-.advantages--food {
+.advantages-attraction__item--food {
     background-color: #ffffff;
 }
 
-.advantages--road {
+.advantages-features__item--road {
     background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages__list-features {
+.advantages-features__list {
     display: flex;
     width: 1200px;
     margin: 0;
     padding: 0;
     list-style: none;
-    padding-left: 0;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -503,7 +496,7 @@ body {
     line-height: 23px;
 }
 
-.select--found {
+.select__found {
     font-weight: 700;
     font-size: 30px;
     line-height: 39px;
@@ -554,7 +547,6 @@ body {
     column-gap: 18px;
     row-gap:10px;
     list-style: none;
-    
 }
 
 .hotels-catalog__item {
@@ -725,14 +717,14 @@ body {
     text-transform: uppercase;
 }
 
-.button__favorites {
+.hotels-catalog__favorites {
     color: #ffffff;
     background-color: #83b3d3;
     width: 140px;
     border-radius: 4px;
 }
 
-.button__favorites--active {
+.hotels-catalog__favorites--active {
     background-color: #7db54f;
 }
 
@@ -752,7 +744,7 @@ body {
     text-transform: capitalize;
 }
 
-.hotels-catalog__button--more {
+.hotels-catalog__more {
     color: #ffffff;
     background-color: #756257;
     display: inline-block;
