@@ -131,14 +131,14 @@ body {
   fill: #756257;
 }
 
-.navigation__link:hover > .navigation__counter {
-  fill: #756257;
-  color: rgba(255, 255, 255, 0.3);
-}
-
 .navigation__link:active > .navigation__icon {
   fill: #756257;
   opacity: 30%;
+}
+
+.navigation__link:active > .navigation__counter {
+  fill: #756257;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .navigation__user {
@@ -692,13 +692,14 @@ body {
   color: #ffffff;
   background-color: #000000;
   background-image: url("../images/catalog-background.png");
-  background-size: auto 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   flex-wrap: wrap;
   min-width: 100%;
+  width: 1200px;
 }
 
 .breadcrumbs {
@@ -1508,6 +1509,7 @@ body {
   outline: none;
   width: 200px;
   font-size: 20px;
+  font-weight: 700;
   line-height: 26px;
   color: #ffffff;
   background-color: #83b3d3;
@@ -1619,6 +1621,7 @@ body {
 }
 
 .hotels-catalog__favorites--active {
+  padding-top: 6px;
   background-color: #7db54f;
 }
 
