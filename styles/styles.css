@@ -187,6 +187,7 @@ body {
 }
 
 .welcome__head {
+  width: 1200px;
   padding-top: 53px;
   padding-bottom: 80px;
   margin: 0 auto;
