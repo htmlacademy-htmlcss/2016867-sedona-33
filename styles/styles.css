@@ -19,6 +19,10 @@ html {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   position: relative;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -187,6 +191,7 @@ body {
 }
 
 .welcome__head {
+  width: 1200px;
   padding-top: 53px;
   padding-bottom: 80px;
   margin: 0 auto;
